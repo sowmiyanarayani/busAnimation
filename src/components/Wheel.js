@@ -13,8 +13,8 @@ const Wheel = (context) => {
 					className: 'wheelCover',
 				} }
 			>
-				<div className="outerWheel">
-					<div className="innerWheel"/>
+				<div className="wheel">
+					<div className="rim"/>
 				</div></div>) }
 	</div>;
 };

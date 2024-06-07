@@ -5,10 +5,11 @@ import Road from './components/Road';
 import Bus from './components/Bus';
 
 const App = (context) =>
-	<div>
+	<div className="App">
 		<Scene { ...context }/>
 		<Road { ...context }/>
 		<Bus { ...context }/>
+
 	</div>;
 
 export default App;
