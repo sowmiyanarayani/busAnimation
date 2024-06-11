@@ -5,10 +5,8 @@ const Border = (context) => {
 	return borders.map((border, index) =>
 		<div
 			key={ index }
-			{ ...{
-				style: { top: `${ border.x }%` },
-				className: 'border',
-			} }
+			className="border"
+			{ ...{ style: { top: `${ border.x }%` }} }
 		/>);
 };
 

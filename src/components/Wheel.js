@@ -1,5 +1,4 @@
 import React from 'react';
-// import { map } from '@laufire/utils/collection';
 
 const Wheel = (context) => {
 	const { config: { wheels }} = context;
@@ -7,10 +6,8 @@ const Wheel = (context) => {
 	return wheels.map((wheel, index) =>
 		<div
 			key={ index }
-			{ ...{
-				style: {	left: `${ wheel.x }%`	 },
-				className: 'wheelCover',
-			} }
+			className="wheelCover"
+			{ ...{ style: {	left: `${ wheel.x }%` }} }
 		>
 			<div className="wheel">
 				<div className="rim"/>
