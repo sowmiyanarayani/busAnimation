@@ -24,8 +24,8 @@ const Bus = (context) => {
 		{ buses.map((bus, key) =>
 			<div
 				key={ key }
-				style={ getBusStyle({ ...context, data: bus }) }
 				className="bus"
+				style={ getBusStyle({ ...context, data: bus }) }
 			>
 				<div className="topCarrier"/>
 				<Border { ...context }/>

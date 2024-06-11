@@ -19,11 +19,11 @@ const minSize = 40;
 const maxSize = 50;
 
 const config = {
-	backgroundHeight: 150,
-	roadHeight: 30,
-	stripes: { count: 8, x: 15 },
-
-	wheels: [{ x: 3.1 }, { x: 76.5 }],
+	backgroundHeight: 140,
+	roadHeight: 25,
+	stripes: { count: 10, x: 15 },
+	wheels: [{ x: 1 }, { x: 83 }],
+	borders: [{ x: 14 }, { x: 70 }, { x: 80 }],
 	busHeight: 20,
 	buses: [
 		{
@@ -31,7 +31,7 @@ const config = {
 			y: 3,
 			animation: 'busForward',
 			direction: 1,
-			driverImage: './images/driver1.png',
+			driverImage: './assets/driver3.jpg',
 			windows: { x: 1.4, passengers: images },
 			size: rndBetween(minSize, maxSize),
 		},
@@ -39,26 +39,17 @@ const config = {
 			x: 20,
 			y: 10,
 			animation: 'nextBusForward',
-			direction: 1,
-			driverImage: './images/driver.png',
+			direction: -1,
+			driverImage: './assets/driver3.jpg',
 			windows: { x: 1.4, passengers: images },
 			size: rndBetween(minSize, maxSize),
 		},
 		{
-			x: 40,
+			x: 30,
 			y: 20,
 			animation: 'busReverse',
-			direction: -1,
-			driverImage: './images/driver2.jpeg',
-			windows: { x: 1.4, passengers: images },
-			size: rndBetween(minSize, maxSize),
-		},
-		{
-			x: 60,
-			y: 30,
-			animation: 'nextBusReverse',
-			direction: -1,
-			driverImage: './images/driver3.jpeg',
+			direction: 1,
+			driverImage: './assets/driver3.jpg',
 			windows: { x: 1.4, passengers: images },
 			size: rndBetween(minSize, maxSize),
 		},
