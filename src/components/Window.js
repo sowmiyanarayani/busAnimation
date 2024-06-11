@@ -8,11 +8,12 @@ const Window = (context) => {
 		{ values(map(passengers, (window, key) =>
 			<div
 				key={ key }
+				className="window"
 				style={ {
 					left: `${ x * (key + 1) }%`,
 					backgroundImage: `url(${ process.env.PUBLIC_URL }${ window })`,
 				} }
-				className="window"
+
 			/>)) }
 	</div>;
 };
