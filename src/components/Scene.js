@@ -5,8 +5,9 @@ const Scene = (context) => {
 
 	return (
 		<div
-			style={ { height: `${ backgroundHeight - roadHeight }vh` } }
 			className="scene"
+			style={ { height: `${ backgroundHeight - roadHeight }vh` } }
+
 		/>);
 };
 
