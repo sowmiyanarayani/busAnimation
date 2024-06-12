@@ -7,7 +7,7 @@ const Wheel = (context) => {
 		<div
 			key={ index }
 			className="wheelCover"
-			{ ...{ style: {	left: `${ wheel.x }%` }} }
+			style={ {	left: `${ wheel.x }%` } }
 		>
 			<div className="wheel">
 				<div className="rim"/>
