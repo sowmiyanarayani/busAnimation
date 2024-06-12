@@ -6,7 +6,7 @@ const Border = (context) => {
 		<div
 			key={ index }
 			className="border"
-			{ ...{ style: { top: `${ border.x }%` }} }
+			style={ { top: `${ border.x }%` } }
 		/>);
 };
 
