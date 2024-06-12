@@ -9,7 +9,6 @@ const App = (context) =>
 		<Scene { ...context }/>
 		<Road { ...context }/>
 		<Bus { ...context }/>
-
 	</div>;
 
 export default App;
